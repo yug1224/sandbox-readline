@@ -1,13 +1,13 @@
-const fs = require('fs');
-const readline = require('readline');
-const fetch = require('node-fetch');
+const fs = require("fs");
+const readline = require("readline");
+const fetch = require("node-fetch");
 
 (async () => {
-  console.log('start');
+  console.log("start");
 
-  const input = fs.createReadStream('./input.txt');
+  const input = fs.createReadStream("./input.txt");
 
-  const rl = readline.createInterface({input});
+  const rl = readline.createInterface({ input });
 
   for await (const line of rl) {
     const res = await fetch(line);
@@ -15,5 +15,5 @@ const fetch = require('node-fetch');
     console.log(line, res.status, json.username);
   }
 
-  console.log('end');
+  console.log("end");
 })();

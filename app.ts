@@ -1,9 +1,8 @@
-import { readline } from 'https://deno.land/x/readline/mod.ts';
+import { readline } from "https://deno.land/x/readline/mod.ts";
 
+console.log("start");
 
-console.log('start');
-
-const file = await Deno.open('./input.txt');
+const file = await Deno.open("./input.txt");
 
 const rl = readline(file);
 
@@ -13,9 +12,9 @@ for await (const line of rl) {
   if (url) {
     const res = await fetch(url);
     const json = await res.json();
-    console.log(url, res.status, json.username);      
+    console.log(url, res.status, json.username);
   }
 }
 
 file.close();
-console.log('end');
+console.log("end");
