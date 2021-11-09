@@ -1,4 +1,4 @@
-import { readline } from "https://deno.land/x/readline/mod.ts";
+import { readline } from "https://deno.land/x/readline@v1.1.0/mod.ts";
 
 (async () => {
   console.log("start");
