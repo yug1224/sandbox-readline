@@ -3,9 +3,9 @@ import { readline } from 'https://deno.land/x/readline/mod.ts';
 
 console.log('start');
 
-const input = await Deno.open('./input.txt');
+const file = await Deno.open('./input.txt');
 
-const rl = readline(input);
+const rl = readline(file);
 
 for await (const line of rl) {
   const url = new TextDecoder().decode(line);
@@ -17,5 +17,5 @@ for await (const line of rl) {
   }
 }
 
-input.close();
+file.close();
 console.log('end');
