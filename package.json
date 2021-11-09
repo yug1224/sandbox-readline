@@ -1,0 +1,11 @@
+{
+  "name": "sandbox-readline",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "2"
+  },
+  "repository": "https://github.com/YuG1224/sandbox-readline.git",
+  "author": "Yuji Yamaguchi <yuji.yamaguchi24@gmail.com>"
+}
