@@ -13,7 +13,7 @@ for await (const line of rl) {
   if (url) {
     const res = await fetch(url);
     const json = await res.json();
-    console.log(res.status, json.username);      
+    console.log(url, res.status, json.username);      
   }
 }
 

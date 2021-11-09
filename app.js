@@ -12,7 +12,7 @@ const fetch = require('node-fetch');
   for await (const line of rl) {
     const res = await fetch(line);
     const json = await res.json();
-    console.log(res.status, json.username);
+    console.log(line, res.status, json.username);
   }
 
   console.log('end');
